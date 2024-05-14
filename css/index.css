@@ -1,13 +1,13 @@
 :root {
     --body-bg: #ffffff;
     --nav-bg: #390b91;
-}
-
-* {
+  }
+  
+  * {
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     min-height: 200vh;
     margin: 0;
     font-size: 1rem;
@@ -16,21 +16,21 @@ body {
     color: black;
     display: grid;
     grid-template-columns: 13rem 1fr;
-}
-
-a {
+  }
+  
+  a {
     text-decoration: none;
-}
-
-nav {
+  }
+  
+  nav {
     position: sticky;
     top: 0;
     max-height: 100svh;
     background-color: var(--nav-bg);
     color: white;
-}
-
-nav div {
+  }
+  
+  nav div {
     width: 100%;
     height: 10%;
     font-size: 2rem;
@@ -39,14 +39,14 @@ nav div {
     color: black;
     font-weight: 600;
     text-align: center;
-}
-
-nav div img {
+  }
+  
+  nav div img {
     width: 40px;
     margin-right: 3px;
-}
-
-nav .nav-list {
+  }
+  
+  nav .nav-list {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -54,18 +54,18 @@ nav .nav-list {
     gap: .5rem;
     padding-block: 3rem;
     font-size: 1rem;
-}
-
-nav .nav-list li {
+  }
+  
+  nav .nav-list li {
     padding: .8rem 2rem;
-}
-
-nav .nav-list li.active {
+  }
+  
+  nav .nav-list li.active {
     background-color: rgba(10, 13, 51, 0.7);
     position: relative;
-}
-
-.nav-list li.active::before {
+  }
+  
+  .nav-list li.active::before {
     content: '';
     position: absolute;
     width: .3rem;
@@ -74,54 +74,54 @@ nav .nav-list li.active {
     bottom: 0;
     background-color: rgba(246, 244, 250, 0.959);
     border-radius: 5px 0 0 5px;
-}
-
-nav .nav-list li i {
+  }
+  
+  nav .nav-list li i {
     padding: .2rem .3rem;
     margin-right: 7px;
     font-size: 1.5rem;
     border-radius: 4px;
     background-color: rgba(163, 138, 209, 0.1);
-}
-
-nav .nav-list li.active i {
+  }
+  
+  nav .nav-list li.active i {
     background-color: #390b91;
-}
-
-nav .nav-list a {
+  }
+  
+  nav .nav-list a {
     text-decoration: none;
     color: white;
     position: relative;
     bottom: 6px;
-}
-
-main {
+  }
+  
+  main {
     background-color: rgba(246, 244, 250, 0.959);
-}
-
-header {
+  }
+  
+  header {
     height: 4rem;
     color: #110130a4;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: var(--body-bg);
-}
-
-header div:nth-of-type(1) h3 {
+  }
+  
+  header div:nth-of-type(1) h3 {
     position: relative;
     bottom:5px;
     left: 25px;
-}
-
-header div:nth-of-type(2) {
+  }
+  
+  header div:nth-of-type(2) {
     display: flex;
     width: 25%;
     justify-content: space-between;
     margin-right: 1.5rem;
-}
-
-header div:nth-of-type(2) .notification {
+  }
+  
+  header div:nth-of-type(2) .notification {
     width: 35px;
     height: 35px;
     background-color: rgba(163, 138, 209, 0.5);
@@ -130,13 +130,13 @@ header div:nth-of-type(2) .notification {
     padding: 5px;
     margin-top: 10px;
     border-radius: 50%;
-}
-
-header div:nth-of-type(2) .notification i {
+  }
+  
+  header div:nth-of-type(2) .notification i {
     font-size: 25px;
-}
-
-header div:nth-of-type(2) .notification span {
+  }
+  
+  header div:nth-of-type(2) .notification span {
     position: absolute;
     top: 0;
     right: 0;
@@ -147,90 +147,114 @@ header div:nth-of-type(2) .notification span {
     width: .7rem;
     justify-content: center;
     text-align: center;
-}
-
-header div:nth-of-type(2) .userName {
+  }
+  
+  header div:nth-of-type(2) .userName {
     line-height: 0;
     text-align: right;
-}
-
-header div:nth-of-type(2) .userName h4 {
+  }
+  
+  header div:nth-of-type(2) .userName h4 {
     font-size: 18px;
-}
-
-header div:nth-of-type(2) .userName p {
+  }
+  
+  header div:nth-of-type(2) .userName p {
     font-size: 16px;
-}
-
-header div:nth-of-type(2) .logout i {
+  }
+  
+  header div:nth-of-type(2) .logout i {
     font-size: 35px;
     color: red;
     padding-top: 10px;
-}
-
-.main-body {
+  }
+  
+  .main-body {
     padding: 10px 1.5rem 10px 25px;
-}
-
-.main-body .welcome {
+  }
+  
+  .main-body .welcome {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid grey;
     margin-bottom: 10px;
     line-height: 0;
-}
-
-.main-body .welcome span {
+  }
+  
+  .main-body .welcome span {
     font-weight: 600;
-}
-
-.main-body .welcome a {
+  }
+  
+  .main-body .welcome a {
     font-size: 16px;
     font-weight: 600;
     color: red;
-}
-
-.main-body .welcome a i {
+  }
+  
+  .main-body .welcome a i {
     position: relative;
     top: 7px;
-}
-
-.row {
+  }
+  
+  .row {
     background-color: var(--body-bg);
-    height: 440px;
+    height: 425px;
     padding: 2px 0 0 20px;
     border-radius: 10px;
     overflow-y: scroll;
-}
-
-.row::-webkit-scrollbar {
+  }
+  
+  .row::-webkit-scrollbar {
     width: 5px;
-}
-
-.row::-webkit-scrollbar-track {
+  }
+  
+  .row::-webkit-scrollbar-track {
     box-shadow: inset 0 0 15px rgba(230, 205, 205, 0.5);
-}
-
-.row::-webkit-scrollbar-thumb {
+  }
+  
+  .row::-webkit-scrollbar-thumb {
     background-color: #a59b9b;
     border-radius: 15px;
-}
-
-.row i {
+  }
+  
+  .wrapper {
+    height: 84.5px;
+    position: relative;
+    align-content: center;
+    border-bottom: 1px solid rgba(230, 205, 205, 0.5);
+  }
+  
+  .wrap-position{
+    width: 100%;
+    height: 160px;
+  }
+  
+  .spacer{
+  width: 100%;
+  height: 120px;
+  border-bottom:  1px solid rgb(231, 229, 229);
+  }
+  
+  .row i {
     text-align: center;
     cursor: pointer;
     border-radius: 50%;
     box-shadow: 1px 1px 3px #667185;
-    position: relative;
+    position: absolute;
+    
+  }
+
+  /* for the arrow position */
+  .down{
     top: 30px;
-}
+    right: 20px;
+  }
 
-.row hr {
-    width: 95%;
-    margin: 10px 0;
-}
+  .up{
+    top: 80px;
+    right: 20px;
+  }
 
-.row .col-md-2 {
+  .row .col-md-2 {
     float: left;
     width: 15%;
     margin-right: 10px;
@@ -241,86 +265,86 @@ header div:nth-of-type(2) .logout i {
     line-height: 10px;
     border-radius: 10px;
     box-shadow: 1px 1px 3px #667185;
-}
-
-.row .form-m span:nth-of-type(1) {
+  }
+  
+  .row .form-m span:nth-of-type(1) {
     color: white;
     font-weight: 600;
     padding: 8px;
     border-radius: 50%;
     background-color: yellow;
-}
-
-.row .form-q span:nth-of-type(1) {
+  }
+  
+  .row .form-q span:nth-of-type(1) {
     color: white;
     font-weight: 600;
     padding: 8px;
     border-radius: 50%;
     background-color: rgb(7, 253, 27);
-}
-
-.row .form-n span:nth-of-type(1) {
+  }
+  
+  .row .form-n span:nth-of-type(1) {
     color: white;
     font-weight: 600;
     padding: 8px;
     border-radius: 50%;
     background-color: #390b91;
-}
-
-.row .form-ng span:nth-of-type(1) {
+  }
+  
+  .row .form-ng span:nth-of-type(1) {
     color: white;
     font-weight: 600;
     padding: 8px;
     border-radius: 50%;
     background-color: #130685;
-}
-
-.row .form-a span:nth-of-type(1) {
+  }
+  
+  .row .form-a span:nth-of-type(1) {
     color: white;
     font-weight: 600;
     padding: 8px;
     border-radius: 50%;
     background-color: orangered;
-}
-
-.row .form-m span:nth-of-type(2),
-.row .form-q span:nth-of-type(2),
-.row .form-n span:nth-of-type(2),
-.row .form-ng span:nth-of-type(2),
-.row .form-a span:nth-of-type(2) {
+  }
+  
+  .row .form-m span:nth-of-type(2),
+  .row .form-q span:nth-of-type(2),
+  .row .form-n span:nth-of-type(2),
+  .row .form-ng span:nth-of-type(2),
+  .row .form-a span:nth-of-type(2) {
     font-weight: 600;
     margin: 0 15px;
-}
-
-.row .col-m {
+  }
+  
+  .row .col-m {
     border-left: 10px solid yellow;
-}
-
-.row .col-q {
+  }
+  
+  .row .col-q {
     border-left: 10px solid rgb(7, 253, 27);
-}
-
-.row .col-n {
+  }
+  
+  .row .col-n {
     border-left: 10px solid #390b91;
-}
-
-.row .col-ng {
+  }
+  
+  .row .col-ng {
     border-left: 10px solid #130685;
-}
-
-.row .col-a {
+  }
+  
+  .row .col-a {
     border-left: 10px solid orangered;
-}
-
-.row .col-md-2 p:nth-of-type(1) {
+  }
+  
+  .row .col-md-2 p:nth-of-type(1) {
     font-weight: 500;
-}
-
-.row .col-md-2 p:nth-of-type(2) {
+  }
+  
+  .row .col-md-2 p:nth-of-type(2) {
     font-weight: 550;
     color: #110130a4;
-}
-
-.row .col-md-2 p:nth-of-type(3) {
+  }
+  
+  .row .col-md-2 p:nth-of-type(3) {
     font-weight: 550;
-}
+  }

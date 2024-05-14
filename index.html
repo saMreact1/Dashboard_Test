@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="view-transition" content="same-origin">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Dashboard</title>
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
-    
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
+
 <body>
     <nav class="sidenav">
         <div>
@@ -48,7 +50,9 @@
 
     <main>
         <header>
-            <div><h3>Dashboard</h3></div>
+            <div>
+                <h3>Dashboard</h3>
+            </div>
 
             <div>
                 <span class="notification">
@@ -66,189 +70,201 @@
         <div class="main-body">
             <div class="welcome">
                 <p>Welcome back, <span>Adeleke</span></p>
-                <a href="#"><i class="material-icons">vertical_align_bottom</i>  Generate Report</a>
+                <a href="#"><i class="material-icons">vertical_align_bottom</i> Generate Report</a>
             </div>
 
+            <!-- first row -->
             <div class="row">
-                <div>
+                <div id="wrapper1" class="wrapper">
                     <p class="form-m"><span>M</span> <span>Form M</span> All information relating to Form M</p>
-                <div id="main">
-                    <div class="col-md-2 col-m">
-                        <p>All</p>
-                        <p>102</p>
-                        <p>94</p>
+                    <i class="material-icons" id="arrow1">keyboard_arrow_up</i>
+                    <div id="main1">
+                        <div class="col-md-2 col-m">
+                            <p>All</p>
+                            <p>102</p>
+                            <p>94</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Processed</p>
+                            <p>102</p>
+                            <p>37</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Iniated</p>
+                            <p>124,605</p>
+                            <p>10</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Ammendments</p>
+                            <p>145,400</p>
+                            <p>28</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Cancellations</p>
+                            <p>30</p>
+                            <p>7</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Pending</p>
+                            <p>N/A</p>
+                            <P>8</P>
+                        </div>
                     </div>
-                    <div class="col-md-2">
-                        <p>Processed</p>
-                        <p>102</p>
-                        <p>37</p>
-                    </div>
-                    <div class="col-md-2">
-                        <p>Iniated</p>
-                        <p>124,605</p>
-                        <p>10</p>
-                    </div>
-                    <div class="col-md-2">
-                        <p>Ammendments</p>
-                        <p>145,400</p>
-                        <p>28</p>
-                    </div>
-                    <div class="col-md-2">
-                        <p>Cancellations</p>
-                        <p>30</p>
-                        <p>7</p>
-                    </div>
-                    <div class="col-md-2">
-                        <p>Pending</p>
-                        <p>N/A</p>
-                        <P>8</P>
-                    </div>
-                    <i class="material-icons" onclick="hideShow()">keyboard_arrow_up</i>
-                    <hr>
                 </div>
-                </div>
-                    
-                <p class="form-q"><span>Q</span> <span>Form Q</span> All information relating to Form Q</p>
-                <div class="col-md-2 col-q">
-                    <p>All</p>
-                    <p>102</p>
-                    <p>94</p>
-                </div>
-                <div class="col-md-2">
-                    <p>Processed</p>
-                    <p>102</p>
-                    <p>37</p>
-                </div>
-                <div class="col-md-2">
-                    <p>Iniated</p>
-                    <p>124,605</p>
-                    <p>10</p>
-                </div>
-                <div class="col-md-2">
-                    <p>Ammendments</p>
-                    <p>145,400</p>
-                    <p>28</p>
-                </div>
-                <div class="col-md-2">
-                    <p>Cancellations</p>
-                    <p>30</p>
-                    <p>7</p>
-                </div>
-                <div class="col-md-2">
-                    <p>Pending</p>
-                    <p>N/A</p>
-                    <P>8</P>
-                </div>
-                <i class="material-icons">keyboard_arrow_up</i>
-                <br>
-                <hr>
 
-                <p class="form-n"><span>N</span> <span>NXP</span> All information relating to NXP</p>
-                <div class="col-md-2 col-n">
-                    <p>All</p>
-                    <p>102</p>
-                    <p>94</p>
+                <!-- second row -->
+                <div id="wrapper2" class="wrapper">
+                    <p class="form-q"><span>Q</span> <span>Form Q</span> All information relating to Form Q</p>
+                    <i class="material-icons" id="arrow2">keyboard_arrow_up</i>
+                    <div id="main2">
+                        <div class="col-md-2 col-q">
+                            <p>All</p>
+                            <p>102</p>
+                            <p>94</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Processed</p>
+                            <p>102</p>
+                            <p>37</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Iniated</p>
+                            <p>124,605</p>
+                            <p>10</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Ammendments</p>
+                            <p>145,400</p>
+                            <p>28</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Cancellations</p>
+                            <p>30</p>
+                            <p>7</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Pending</p>
+                            <p>N/A</p>
+                            <P>8</P>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-2">
-                    <p>Processed</p>
-                    <p>102</p>
-                    <p>37</p>
-                </div>
-                <div class="col-md-2">
-                    <p>Iniated</p>
-                    <p>124,605</p>
-                    <p>10</p>
-                </div>
-                <div class="col-md-2">
-                    <p>Ammendments</p>
-                    <p>145,400</p>
-                    <p>28</p>
-                </div>
-                <div class="col-md-2">
-                    <p>Cancellations</p>
-                    <p>30</p>
-                    <p>7</p>
-                </div>
-                <div class="col-md-2">
-                    <p>Pending</p>
-                    <p>N/A</p>
-                    <P>8</P>
-                </div>
-                <i class="material-icons">keyboard_arrow_up</i>
-                <br>
-                <hr>
 
-                <p class="form-ng"><span>N</span> <span>NGX</span> All information relating to NGX</p>
-                <div class="col-md-2 col-ng">
-                    <p>All</p>
-                    <p>102</p>
-                    <p>94</p>
+                <!-- Third row -->
+                <div id="wrapper3" class="wrapper">
+                    <p class="form-n"><span>N</span> <span>NXP</span> All information relating to NXP</p>
+                    <i class="material-icons" id="arrow3">keyboard_arrow_up</i>
+                    <div id="main3">
+                        <div class="col-md-2 col-n">
+                            <p>All</p>
+                            <p>102</p>
+                            <p>94</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Processed</p>
+                            <p>102</p>
+                            <p>37</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Iniated</p>
+                            <p>124,605</p>
+                            <p>10</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Ammendments</p>
+                            <p>145,400</p>
+                            <p>28</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Cancellations</p>
+                            <p>30</p>
+                            <p>7</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Pending</p>
+                            <p>N/A</p>
+                            <P>8</P>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-2">
-                    <p>Processed</p>
-                    <p>102</p>
-                    <p>37</p>
-                </div>
-                <div class="col-md-2">
-                    <p>Iniated</p>
-                    <p>124,605</p>
-                    <p>10</p>
-                </div>
-                <div class="col-md-2">
-                    <p>Ammendments</p>
-                    <p>145,400</p>
-                    <p>28</p>
-                </div>
-                <div class="col-md-2">
-                    <p>Cancellations</p>
-                    <p>30</p>
-                    <p>7</p>
-                </div>
-                <div class="col-md-2">
-                    <p>Pending</p>
-                    <p>N/A</p>
-                    <P>8</P>
-                </div>
-                <i class="material-icons">keyboard_arrow_up</i>
-                <br>
-                <hr>
 
-                <p class="form-a"><span>A</span> <span>Form A</span> All information relating to Form A</p>
-                <div class="col-md-2 col-a">
-                    <p>All</p>
-                    <p>102</p>
-                    <p>94</p>
+                <!-- Fourth row -->
+                <div id="wrapper4" class="wrapper">
+                    <p class="form-ng"><span>N</span> <span>NGX</span> All information relating to NGX</p>
+                    <i class="material-icons" id="arrow4">keyboard_arrow_up</i>
+                    <div id="main4">
+                        <div class="col-md-2 col-ng">
+                            <p>All</p>
+                            <p>102</p>
+                            <p>94</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Processed</p>
+                            <p>102</p>
+                            <p>37</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Iniated</p>
+                            <p>124,605</p>
+                            <p>10</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Ammendments</p>
+                            <p>145,400</p>
+                            <p>28</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Cancellations</p>
+                            <p>30</p>
+                            <p>7</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Pending</p>
+                            <p>N/A</p>
+                            <P>8</P>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-2">
-                    <p>Processed</p>
-                    <p>102</p>
-                    <p>37</p>
+
+                <!-- Fifth row -->
+                <div id="wrapper5" class="wrapper">
+                    <p class="form-a"><span>A</span> <span>Form A</span> All information relating to Form A</p>
+                    <i class="material-icons" id="arrow5">keyboard_arrow_up</i>
+                    <div id="main5">
+                        <div class="col-md-2 col-a">
+                            <p>All</p>
+                            <p>102</p>
+                            <p>94</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Processed</p>
+                            <p>102</p>
+                            <p>37</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Iniated</p>
+                            <p>124,605</p>
+                            <p>10</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Ammendments</p>
+                            <p>145,400</p>
+                            <p>28</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Cancellations</p>
+                            <p>30</p>
+                            <p>7</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Pending</p>
+                            <p>N/A</p>
+                            <P>8</P>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-2">
-                    <p>Iniated</p>
-                    <p>124,605</p>
-                    <p>10</p>
-                </div>
-                <div class="col-md-2">
-                    <p>Ammendments</p>
-                    <p>145,400</p>
-                    <p>28</p>
-                </div>
-                <div class="col-md-2">
-                    <p>Cancellations</p>
-                    <p>30</p>
-                    <p>7</p>
-                </div>
-                <div class="col-md-2">
-                    <p>Pending</p>
-                    <p>N/A</p>
-                    <P>8</P>
-                </div>
-                <i class="material-icons">keyboard_arrow_up</i>
-                <br>
-                <hr>
+
             </div>
-        </div>
     </main>
 
 
